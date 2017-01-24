@@ -1,12 +1,12 @@
 {
-  "name": "redux-ru-tutorial",
+  "name": "takitaki2",
   "version": "1.0.0",
-  "description": "Redux RU tutorial",
+  "description": "Taki taki redux",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Maxim Patsianskiy",
+  "author": "Oleksandr Heiets",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.4.5",
