@@ -1,0 +1,185 @@
+//@import 'app/libs/normalize-css/normalize';
+//@import 'app/libs/font-awesome/scss/font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+body {
+   font-family: Open Sans;
+   background-color: #e8f1f5;
+   font-family: Roboto;
+}
+.leftbar {
+   transition: 1s;
+   position: fixed;
+   left: -300px;
+   top: 0;
+   height: 100%;
+   width: 300px;
+   background-color: white;
+   z-index: 999;
+   overflow: auto;
+   ul {
+      h5 {
+         padding-left: 10px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         padding-right: 10px;
+         color: lighten(black, 35%)
+      }
+      li {
+         padding-left: 10px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         padding-right: 10px;
+         color: lighten(black, 35%)
+      }
+   }
+}
+.leftshow {
+   left: 0;
+}
+.rightbar {
+   transition: 1s;
+   position: fixed;
+   right: -300px;
+   top: 0;
+   height: 100%;
+   width: 300px;
+   background-color: white;
+   z-index: 999;
+   h5 {
+      padding-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-right: 10px;
+      font-weight: bold;
+      font-size: 20px;
+   }
+   p {
+      padding-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-right: 10px;
+      color: lighten(black, 35%)
+   }
+}
+.rightshow {
+   right: 0;
+}
+.cardback {
+   background: url(../img/logowhite.png) center center;
+   background-repeat: no-repeat;
+   font-size: 50px;
+   color: white;
+   position: relative;
+   background-color: black;
+   margin: auto;
+   margin-top: 70px;
+   width: 250px;
+   height: 400px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   border-radius: 20px;
+}
+.left {
+   position: absolute;
+   top: 30px;
+   left: 30px;
+}
+.right {
+   position: absolute;
+   top: 320px;
+   right: 30px;
+}
+.cardsLeft {
+   font-weight: bold;
+   font-size: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.cardButtons {
+   margin-top: 20px;
+   text-align: center;
+   span {
+      font-size: 40px;
+      padding: 10px;
+   }
+}
+.nextBtn {
+   height: 50px;
+   width: 100px;
+   border: none;
+   background-color: lighten(#4ba042, 15%);
+   font-size: 20px;
+   &:hover {
+      background-color: #4ba042;
+   }
+}
+.prevBtn {
+   height: 50px;
+   width: 100px;
+   border: none;
+   background-color: lighten(#4ba042, 15%);
+   font-size: 20px;
+   &:hover {
+      background-color: #4ba042;
+   }
+}
+.historyBtn, .descBtn {
+   height: 50px;
+   width: 130px;
+   border: none;
+   background-color: lighten(#4ba042, 15%);
+   font-size: 20px;
+   margin: 0 10px;
+   &:hover {
+      background-color: #4ba042;
+   }
+}

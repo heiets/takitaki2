@@ -1,0 +1,331 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Open Sans;
+  background-color: #edeef0;
+  font-family: Roboto;
+}
+
+.wrap {
+  min-height: 300px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.wrap__text {
+  flex-grow: 1;
+}
+
+.Grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.GridItem {
+  height: 100px;
+  max-width: 200px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.GridItem:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 100, 200, 0.75);
+}
+
+.single {
+  display: flex;
+  height: 100px;
+  border-bottom: 1px solid #edeef0;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.name {
+  padding-top: 20px;
+  flex: 3;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.date {
+  padding-top: 20px;
+  border-left: 1px solid #edeef0;
+  flex: 1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.time {
+  padding-top: 20px;
+  border-left: 1px solid #edeef0;
+  flex: 1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cab {
+  padding-top: 20px;
+  border-left: 1px solid #edeef0;
+  flex: 1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.singletitle {
+  display: flex;
+  height: 75px;
+  border-bottom: 1px solid #edeef0;
+  text-align: center;
+  vertical-align: middle;
+  color: #a0a3a9;
+  font-weight: 400;
+}
+
+.nametitle {
+  padding-top: 20px;
+  flex: 3;
+  font-size: 20px;
+}
+
+.datetitle {
+  padding-top: 20px;
+  border-left: 1px solid #edeef0;
+  flex: 1;
+  font-size: 20px;
+}
+
+.timetitle {
+  padding-top: 20px;
+  border-left: 1px solid #edeef0;
+  flex: 1;
+  font-size: 20px;
+}
+
+.cabtitle {
+  padding-top: 20px;
+  border-left: 1px solid #edeef0;
+  flex: 1;
+  font-size: 20px;
+}
+
+.timer {
+  padding-top: 40px;
+  display: flex;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 40px;
+}
+
+.today {
+  flex: 1;
+}
+
+.hour {
+  flex: 1;
+}
+
+.min {
+  flex: 1;
+}
+
+.sec {
+  flex: 1;
+}
+
+.active {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.author {
+  border-top: 1px solid #edeef0;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+  .GridItem {
+    font-size: 15px;
+  }
+
+  .nametitle {
+    font-size: 15px;
+  }
+
+  .datetitle {
+    font-size: 10px;
+  }
+
+  .timetitle {
+    font-size: 10px;
+  }
+
+  .cabtitle {
+    font-size: 10px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .time {
+    font-size: 10px;
+  }
+
+  .cab {
+    font-size: 10px;
+  }
+
+  .timer {
+    font-size: 30px;
+  }
+}
+
