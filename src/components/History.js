@@ -1,5 +1,8 @@
 import React, {  Component } from 'react'
 export default class History extends Component {
+    handleHistory() {
+        this.props.handleHistory();
+    }
     render() {
         const { historyCards, cards } = this.props;
         var arr = historyCards.map((v,i) => (
@@ -9,7 +12,7 @@ export default class History extends Component {
             </li>
         )
     );
-        return <div className={ this.props.showHistory  === true ? 'leftbar leftshow' : 'leftbar'}>
+        return <div className={ this.props.showHistory  === true ? 'leftbar leftshow' : 'leftbar'} onClick={::this.handleHistory}>
             <p className="cardsLeft">Осталось {cards.length - historyCards.length} карт.</p>
             <ul>
                 { arr }

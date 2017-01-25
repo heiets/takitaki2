@@ -220,6 +220,11 @@ body {
   height: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+  transition: 1s all;
+}
+
+.cardback:hover {
+  box-shadow: 0px 0px 128px 28px #4ba042;
 }
 
 .left {
@@ -257,10 +262,12 @@ body {
   border: none;
   background-color: #74c26c;
   font-size: 20px;
+  transition: 0.5s all;
 }
 
 .nextBtn:hover {
   background-color: #4ba042;
+  box-shadow: 0px 0px 19px 4px #4ba042;
 }
 
 .prevBtn {
@@ -269,10 +276,12 @@ body {
   border: none;
   background-color: #74c26c;
   font-size: 20px;
+  transition: 0.5s all;
 }
 
 .prevBtn:hover {
   background-color: #4ba042;
+  box-shadow: 0px 0px 19px 4px #4ba042;
 }
 
 .historyBtn,
@@ -283,10 +292,12 @@ body {
   background-color: #74c26c;
   font-size: 20px;
   margin: 0 10px;
+  transition: 0.5s all;
 }
 
 .historyBtn:hover,
 .descBtn:hover {
   background-color: #4ba042;
+  box-shadow: 0px 0px 19px 4px #4ba042;
 }
 

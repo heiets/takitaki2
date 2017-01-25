@@ -23,8 +23,8 @@ class App extends Component {
     const { history, page } = this.props;
     const { nextCard , prevCard , shuffle , addToHistory } = this.props.Actions;
     return <div>
-      <History historyCards={history.cards} cards={page.cards} showHistory={ this.state.showHistory } />
-      <Description cards={page.cards} i={page.i}  showDesc={ this.state.showDesc }/>
+      <History historyCards={history.cards} cards={page.cards} handleHistory={ ::this.toggleHistory } showHistory={ this.state.showHistory } />
+      <Description cards={page.cards} i={page.i} handleDesc={ ::this.toggleDesc }  showDesc={ this.state.showDesc }/>
       <Page handleHistory={ ::this.toggleHistory } handleDesc={ ::this.toggleDesc } cards={page.cards} i={page.i} progressNumber={page.progressNumber} historyCards={history.cards} nextCard={nextCard} prevCard={prevCard} shuffle={shuffle}  addToHistory={addToHistory}/>
     </div>
   }
