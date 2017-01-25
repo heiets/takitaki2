@@ -151,6 +151,7 @@ body {
   background-color: white;
   z-index: 999;
   overflow: auto;
+  box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.36);
 }
 
 .leftbar ul h5 {
@@ -182,6 +183,7 @@ body {
   width: 300px;
   background-color: white;
   z-index: 999;
+  box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.36);
 }
 
 .rightbar h5 {

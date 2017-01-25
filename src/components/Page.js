@@ -17,8 +17,6 @@ export default class Page extends Component {
         if (number === progressNumber && progressNumber !== this.props.cards.length - 1) {
             this.props.addToHistory(arr);
             newProgressNumber++;
-            console.log(this.props.historyCards);
-            console.log(this.props.cards);
         }
         number === this.props.cards.length-1 ? this.props.nextCard(number,progressNumber) : this.props.nextCard(number+1,newProgressNumber);
     }

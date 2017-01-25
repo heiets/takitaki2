@@ -66,6 +66,7 @@ body {
    background-color: white;
    z-index: 999;
    overflow: auto;
+   box-shadow: 10px 0px 20px 0px rgba(0,0,0,0.36);
    ul {
       h5 {
          padding-left: 10px;
@@ -95,6 +96,7 @@ body {
    width: 300px;
    background-color: white;
    z-index: 999;
+   box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.36);
    h5 {
       padding-left: 10px;
       margin-top: 10px;
